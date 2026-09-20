@@ -19,10 +19,8 @@ resolver = "3"
 tauri-build = { version = "2.6.1", features = [] }
 
 [dependencies]
-# local dev
-# ree-pak-core = { path = "../../ree-pak-rs/ree-pak-core" }
-
-ree-pak-core = { git = "https://github.com/eigeen/ree-pak-rs", rev = "5988312", package = "ree-pak-core" }
+# Patched core 0.8.0 with remap entry support.
+ree-pak-core = { git = "https://github.com/dzxrly/ree-pak-rs.git", rev = "fef67eca78721b6f86fe2027c8f2e37e44c787d1", package = "ree-pak-core" }
 re-tex = { git = "https://github.com/eigeen/re-tex", rev = "05e8263" ,features = ["image"] }
 re-sound = { git = "https://github.com/eigeen/re-sound", rev = "8db762d", package = "re-sound" }
 
